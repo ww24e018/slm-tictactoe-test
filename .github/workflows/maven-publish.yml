@@ -38,8 +38,8 @@ jobs:
         JAR_NAME="$(ls target/*.jar)"
         echo lalal $JAR_NAME lalal
 
-    #- name: Upload JAR artifact
-    #  uses: actions/upload-artifact@v4
-    #  with:
-    #    name: ${{ env.JAR_NAME }}
-    #    path: target/${{ env.JAR_NAME }}
+    - name: Upload JAR artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ env.JAR_NAME }}
+        path: target/${{ env.JAR_NAME }}
