@@ -23,7 +23,8 @@ public class TicTacToe {
 
             // TODO: player input and acting on it, showing game state
 
-            // TODO: checking game-end conditions, dealing with it, asking player, making switchPlayer conditional
+            // TODO: checking game-end conditions, dealing with it,
+            //  asking player, making switchPlayer conditional
             this.switchCurrentPlayer();
 
             // TODO: next line is terminating placeholder; replace by actual game logic
@@ -38,7 +39,9 @@ public class TicTacToe {
         if (this.currentPlayer == this.player2) {
             this.currentPlayer = this.player1; return;
         }
-        throw new RuntimeException("Internal Component Error in TicTacToe - Should not happen! ('Huh?')");
+        throw new RuntimeException(
+                "Internal Component Error in TicTacToe - Should not happen! ('Huh?')"
+        );
     }
 
     private boolean hasWinner() {
