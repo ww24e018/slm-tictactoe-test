@@ -34,6 +34,7 @@ jobs:
       run: |
         pwd
         ls target/
+        ls target/*.jar
         JAR_NAME="$(ls target/*.jar)"
         echo lalal $JARNAME lalal
 
