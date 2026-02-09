@@ -41,5 +41,8 @@ jobs:
     - name: Upload JAR artifact
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ env.JAR_NAME }}
-        path: target/${{ env.JAR_NAME }}
+        name: 'slm-tic-tac-toe-nightly.jar'
+        overwrite: true
+        compression-level: '0'
+        retention-days: '3'
+        path: target/slm-tic-tac-toe-nightly.jar
