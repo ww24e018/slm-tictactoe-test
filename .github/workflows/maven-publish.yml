@@ -1,11 +1,15 @@
-# This workflow will build a package using Maven and then publish it to GitHub packages when a release is created
-# For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
+# based on
+# - a template offered by the github action wizard,
+# - the testing-on-MR script next to this file
+# - consulting with collegues (thx to @Pfnei)
+# - the documentation at https://github.com/actions/download-artifact
+# - documentation provided by the intelliJ IDE
 
 name: Create and Deposit Jar Artefact
 
 on:
   release:
-    types: [created]
+    types: [created] # note: attaching to upload would require extra steps and decisions TODO?
   push:
     branches: [ "main" ]
 
